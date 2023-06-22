@@ -1,0 +1,37 @@
+{
+    "name": "lion9966/think-utils",
+    "description": "thinkphp 6 常用工具集合",
+    "type": "library",
+    "license": "Apache 2.0",
+    "require": {
+        "php": ">=7.4",
+        "lcobucci/jwt": "^5.0.0",
+        "Qcloud/Sms": "^0.1.*",
+        "swiftmailer/swiftmailer": "^5.3|^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "lion9966\\utils\\": "src"
+        }
+    },
+    "authors": [
+        {
+            "name": "lion9966",
+            "email": "lion9966@163.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "extra": {
+        "think": {
+            "config": {
+                "utils": "config/utils.php",
+                "permission": "config/permission.php",
+                "auth": "config/auth.php"
+            },
+            "services": [
+                "lion9966\\utils\\exception\\ExceptionService",
+                "lion9966\\utils\\permission\\PermissionService"
+            ]
+        }
+    }
+}
