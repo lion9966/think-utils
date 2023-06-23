@@ -2,11 +2,14 @@
     "name": "lion9966/think-utils",
     "description": "thinkphp 6 常用工具集合",
     "type": "library",
-    "license": "Apache-2.0",
+    "license": "MIT",
     "require": {
         "php": ">=7.4",
+        "topthink/framework": "^6.1.0",
+        "topthink/think-orm": "^2.0",
+        "topthink/think-filesystem": "^1.0",
         "lcobucci/jwt": "^5.0.0",
-        "qcloudsms/qcloudsms_php": "^0.1.4",
+        "qcloudsms/qcloudsms_php": "0.1.4",
         "swiftmailer/swiftmailer": "^5.3|^6.0"
     },
     "autoload": {
