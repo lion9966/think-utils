@@ -114,7 +114,7 @@ class Install extends Command
         $str .= "`phone` bigint(11) NOT NULL DEFAULT '0' COMMENT '手机号码'," . "\n";
         $str .= "`email` varchar(127) DEFAULT NULL COMMENT '邮箱'," . "\n";
         $str .= "`login_times` int(10) NOT NULL DEFAULT '0' COMMENT '登陆次数'," . "\n";
-        $str .= "`avatar` varchar(30720) DEFAULT NULL COMMENT '头像base64 160x160'," . "\n";
+        $str .= "`avatar` varchar(21800) DEFAULT NULL COMMENT '头像base64 100x100'," . "\n";
         $str .= "`introduce` varchar(127) DEFAULT NULL COMMENT '自述简介'," . "\n";
         $str .= "`ip` int(10) NOT NULL DEFAULT '0' COMMENT '登陆ip地址'," . "\n";
         $str .= "`isjwt` tinyint(1) NOT NULL DEFAULT '0' COMMENT '1总控，0自控'," . "\n";
