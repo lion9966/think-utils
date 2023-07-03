@@ -2,7 +2,8 @@
 
 namespace lion9966\utils\exception;
 
-use ResponseCode;
+use lion9966\utils\exception\ResponseCode;
+use think\response\Json;
 
 trait ResponseJson
 {
@@ -14,7 +15,7 @@ trait ResponseJson
      * @param array $header 发送header信息
      * @return Json
      */
-    protected function success($message = null, $data = null, $code = ResponseCode::SUCCESS, $header = []): Json
+    protected function success($message = null, $data = null, int $code = ResponseCode::SUCCESS, $header = []): Json
     {
         return json([
             'message' => $message,
@@ -31,7 +32,7 @@ trait ResponseJson
      * @param array $header 发送header信息
      * @return Json
      */
-    protected function error($message = null, $data = null, $code = ResponseCode::ERROR, $header = []): Json
+    protected function error($message = null, $data = null, int $code = ResponseCode::ERROR, $header = []): Json
     {
         return json([
             'message' => $message,
